@@ -21,7 +21,7 @@
     const limit = 6;
       const {data:fetchData} =  useFetchProduct(limit, activePage, sortBy);
      console.log('fetchData',fetchData?.data?.Products)
-
+console.log('added files')
     const pageNumber = (total: number, limit: number) => {
       const number: any = [];
       for (let x = 1; x <= Math.ceil(total / limit); x++) {
