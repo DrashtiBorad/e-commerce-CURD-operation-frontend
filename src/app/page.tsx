@@ -19,9 +19,7 @@
     const [isDropDownOpen, setIsDropDownOpen] = useState(false);
     const router = useRouter();
     const limit = 6;
-      const {data:fetchData,error,isLoading} =  useFetchProduct(limit, activePage, sortBy);
-      const tempData=router
-      console.log('tempData',tempData,error,isLoading)
+      const {data:fetchData} =  useFetchProduct(limit, activePage, sortBy);
      console.log('fetchData',fetchData?.data?.Products)
 
     const pageNumber = (total: number, limit: number) => {
